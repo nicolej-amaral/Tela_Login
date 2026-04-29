@@ -1,19 +1,26 @@
-document.getElementById("formDoacao").addEventListener("submit", function(e){
-    e.preventDefault(); 
+const form = document.getElementById("TelaLogin");
 
-    let doadores = []
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    let nome = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
-    
-    let telefone = document.getElementById("Senha").value;
+   
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
    
 
-    if(nome.length < 3) return alert("Nome inválido");
 
-    if(telefone.length == 0) return alert("Telefone inválido");
+   
+    if (!email.includes("@")) return alert("Email inválido");
+    if (senha.length < 8) return alert("Senha inválida");
+    
 
+    let informações = [{
+      
+        email,
+        senha,
+    
+    }];
 
-
-    document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso! <br>" + "Nome: " + nome + "<br>" + "Email: " + email + "<br>" + "Idade: " + idade + "<br>" + "Peso: " + peso + "<br>" + "Tipo Sanguíneo: " + tipoSanguineo + "<br>" + "Telefone: " + telefone + "<br>" + "Cidade: " + cidade + "<br>" + "Estado: " + estado + "<br>" + "Quintal: " + (quintal ? quintal.value : "Não informado");
+    alert("Formulário enviado!");
+    alert(JSON.stringify(informações, null, ));
 });
