@@ -1,0 +1,18 @@
+.corpo{
+    display: flex;
+    justify-content: center;
+};
+
+.box{
+    display: flex;
+    padding: 100px;
+    background-color: RGB(73, 121, 209);
+    
+    align-items: flex-start;
+
+}
+
+.telaLogin{
+display: flex;
+}
+
