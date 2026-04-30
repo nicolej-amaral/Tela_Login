@@ -17,7 +17,7 @@ body {
     align-items: flex-start;
     gap: 5%;
     color: var(--cor-texto);
-    background-color: var(--cor-fundo);
+    background-color: white;
 }
 
 main {
@@ -25,7 +25,8 @@ main {
     gap: 1%;
     border-radius: 10%;
     box-shadow: 10px 10px 15px rgba(19, 28, 55, 0.3);
-    background-color: var(--cor-fundo-2);
+    background-color: var(--cor-fundo);
+    
 }
 
 #form-login {
@@ -65,5 +66,17 @@ main {
     color: var(--cor-sucesso);
     font-size: 12px;
     text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cor-fundo);
+}
+
+.text {
+   display: flex;
 }
 
