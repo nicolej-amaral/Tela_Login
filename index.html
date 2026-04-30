@@ -1,56 +1,48 @@
-<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <title>Tela de Login</title>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-  </head>
-  
-  
-  <body class="corpo">
-    
-    <form class="telaLogin">
-         <main class="box">
-        <h2> Login</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Simples</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
 
-            <div class = "row justify-content-center">
+<body>
 
-      <div class="email">
-        <label for="Email" class="email">Email</label>
-        <br>
-        <input type = "email" class = "email" id="email" placeholder="Digite seu email">
-        <br>
-        
-      </div>
-      <br>
-      <div class="senha">
-        <label for="senha" class="form-label">Senha</label>
-        <br>
-        <input type="senha" class="senha" id="senha" placeholder="Digite sua senha">
-      </div>
-     
-          </label>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 id="titulo">Login</h2>
+            <form id="form-login">
+                <div id="c-email" classe="conjunto">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div id="c-senha" classe="conjunto">
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                </div>
+                <button id="botao-envio" type="submit">Entrar</button>
+            </form>
+            <div id="mensagem"></div>
+            <div class="toggle" id="toggle">
+                <p> Não tem conta? Cadastre-se! </p>
+            </div>
         </div>
-     
-        <br>
+    </main>
 
-      <div class="entrar">
-        <button type="Entrar" class="btn btn-primary">Entrar</button>
-                            <p class="conta"> Não tem conta?
-                            <a href="Cadastra-se">Cadastre-se</a></p>
+    <footer>
 
+    </footer>
 
-      </div>
-      </div>
-    </form>
+    <script src="scripts/script.js"></script>
+</body>
 
-    </body>
-   </main>
-  
 </html>
 
 
